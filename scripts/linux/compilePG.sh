@@ -56,7 +56,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
             echo
             if [[ $REPLY =~ ^[Yy]$ ]]; then
                 echo "export PG_OF_PATH=${PG_OF_PATH}" >> ~/.profile
-                echo "PG_OF_PATH was added. Restart the console for the changes to take effect"
+                echo "PG_OF_PATH was added. Run "source ~/.profile" or restart the terminal for the changes to take effect."
             fi
             echo "To get started run: projectGenerator --help"
         fi
